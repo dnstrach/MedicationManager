@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D87B933F2964C06E009741C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B933E2964C06E009741C2 /* AppDelegate.swift */; };
+		D87B93412964C06E009741C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93402964C06E009741C2 /* SceneDelegate.swift */; };
+		D87B93462964C06E009741C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87B93442964C06E009741C2 /* Main.storyboard */; };
+		D87B93492964C06E009741C2 /* MedicationManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D87B93472964C06E009741C2 /* MedicationManager.xcdatamodeld */; };
+		D87B934B2964C070009741C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87B934A2964C070009741C2 /* Assets.xcassets */; };
+		D87B934E2964C070009741C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87B934C2964C070009741C2 /* LaunchScreen.storyboard */; };
+		D87B93592964CECE009741C2 /* MedicationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93582964CECE009741C2 /* MedicationListViewController.swift */; };
+		D87B935B2964CEE0009741C2 /* MedicationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B935A2964CEE0009741C2 /* MedicationDetailViewController.swift */; };
+		D87B935D2964CFA2009741C2 /* MedicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B935C2964CFA2009741C2 /* MedicationTableViewCell.swift */; };
+		D87B93622964D1CA009741C2 /* MedicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93612964D1C9009741C2 /* MedicationController.swift */; };
+		D87B93642964D372009741C2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93632964D372009741C2 /* CoreDataStack.swift */; };
+		D87B93662964D5E5009741C2 /* Medication+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93652964D5E5009741C2 /* Medication+Convenience.swift */; };
+		D87B93682964DFF6009741C2 /* DateFormatter+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87B93672964DFF6009741C2 /* DateFormatter+Extras.swift */; };
+		D8AE8EC529675D7E008D45BB /* takenDate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8EC429675D7E008D45BB /* takenDate+Convenience.swift */; };
+		D8AE8EC729679CFF008D45BB /* MoodSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8EC629679CFF008D45BB /* MoodSurveyViewController.swift */; };
+		D8AE8ECB2967AB75008D45BB /* moodSurvey+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8ECA2967AB75008D45BB /* moodSurvey+Convenience.swift */; };
+		D8AE8ECD2967ABDB008D45BB /* moodSurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8ECC2967ABDB008D45BB /* moodSurveyController.swift */; };
+		D8AE8F19296936C6008D45BB /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8F18296936C6008D45BB /* NotificationScheduler.swift */; };
+		D8AE8F1B29694735008D45BB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE8F1A29694735008D45BB /* Strings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D87B933B2964C06E009741C2 /* MedicationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87B933E2964C06E009741C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D87B93402964C06E009741C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D87B93452964C06E009741C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D87B93482964C06E009741C2 /* MedicationManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicationManager.xcdatamodel; sourceTree = "<group>"; };
+		D87B934A2964C070009741C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D87B934D2964C070009741C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D87B934F2964C070009741C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87B93582964CECE009741C2 /* MedicationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationListViewController.swift; sourceTree = "<group>"; };
+		D87B935A2964CEE0009741C2 /* MedicationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailViewController.swift; sourceTree = "<group>"; };
+		D87B935C2964CFA2009741C2 /* MedicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableViewCell.swift; sourceTree = "<group>"; };
+		D87B93612964D1C9009741C2 /* MedicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationController.swift; sourceTree = "<group>"; };
+		D87B93632964D372009741C2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D87B93652964D5E5009741C2 /* Medication+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+Convenience.swift"; sourceTree = "<group>"; };
+		D87B93672964DFF6009741C2 /* DateFormatter+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extras.swift"; sourceTree = "<group>"; };
+		D8AE8EC429675D7E008D45BB /* takenDate+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "takenDate+Convenience.swift"; sourceTree = "<group>"; };
+		D8AE8EC629679CFF008D45BB /* MoodSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSurveyViewController.swift; sourceTree = "<group>"; };
+		D8AE8ECA2967AB75008D45BB /* moodSurvey+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "moodSurvey+Convenience.swift"; sourceTree = "<group>"; };
+		D8AE8ECC2967ABDB008D45BB /* moodSurveyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodSurveyController.swift; sourceTree = "<group>"; };
+		D8AE8F18296936C6008D45BB /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		D8AE8F1A29694735008D45BB /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87B93382964C06E009741C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D87B93322964C06E009741C2 = {
+			isa = PBXGroup;
+			children = (
+				D87B933D2964C06E009741C2 /* MedicationManager */,
+				D87B933C2964C06E009741C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D87B933C2964C06E009741C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87B933B2964C06E009741C2 /* MedicationManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D87B933D2964C06E009741C2 /* MedicationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D87B93602964D1BC009741C2 /* ModelController */,
+				D87B93552964C15B009741C2 /* Resources */,
+				D87B935F2964CFDD009741C2 /* CustomViews */,
+				D87B935E2964CFCB009741C2 /* CoreData */,
+				D87B93572964C254009741C2 /* ViewControllers */,
+				D87B93562964C1A1009741C2 /* Views */,
+			);
+			path = MedicationManager;
+			sourceTree = "<group>";
+		};
+		D87B93552964C15B009741C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D87B933E2964C06E009741C2 /* AppDelegate.swift */,
+				D87B93402964C06E009741C2 /* SceneDelegate.swift */,
+				D87B934A2964C070009741C2 /* Assets.xcassets */,
+				D87B934F2964C070009741C2 /* Info.plist */,
+				D87B93672964DFF6009741C2 /* DateFormatter+Extras.swift */,
+				D8AE8F18296936C6008D45BB /* NotificationScheduler.swift */,
+				D8AE8F1A29694735008D45BB /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D87B93562964C1A1009741C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D87B93442964C06E009741C2 /* Main.storyboard */,
+				D87B934C2964C070009741C2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D87B93572964C254009741C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D87B93582964CECE009741C2 /* MedicationListViewController.swift */,
+				D87B935A2964CEE0009741C2 /* MedicationDetailViewController.swift */,
+				D8AE8EC629679CFF008D45BB /* MoodSurveyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D87B935E2964CFCB009741C2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D87B93472964C06E009741C2 /* MedicationManager.xcdatamodeld */,
+				D87B93632964D372009741C2 /* CoreDataStack.swift */,
+				D87B93652964D5E5009741C2 /* Medication+Convenience.swift */,
+				D8AE8EC429675D7E008D45BB /* takenDate+Convenience.swift */,
+				D8AE8ECA2967AB75008D45BB /* moodSurvey+Convenience.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D87B935F2964CFDD009741C2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D87B935C2964CFA2009741C2 /* MedicationTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		D87B93602964D1BC009741C2 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				D87B93612964D1C9009741C2 /* MedicationController.swift */,
+				D8AE8ECC2967ABDB008D45BB /* moodSurveyController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D87B933A2964C06E009741C2 /* MedicationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87B93522964C070009741C2 /* Build configuration list for PBXNativeTarget "MedicationManager" */;
+			buildPhases = (
+				D87B93372964C06E009741C2 /* Sources */,
+				D87B93382964C06E009741C2 /* Frameworks */,
+				D87B93392964C06E009741C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicationManager;
+			productName = MedicationManager;
+			productReference = D87B933B2964C06E009741C2 /* MedicationManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87B93332964C06E009741C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D87B933A2964C06E009741C2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D87B93362964C06E009741C2 /* Build configuration list for PBXProject "MedicationManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D87B93322964C06E009741C2;
+			productRefGroup = D87B933C2964C06E009741C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87B933A2964C06E009741C2 /* MedicationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D87B93392964C06E009741C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87B934E2964C070009741C2 /* LaunchScreen.storyboard in Resources */,
+				D87B934B2964C070009741C2 /* Assets.xcassets in Resources */,
+				D87B93462964C06E009741C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87B93372964C06E009741C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87B93662964D5E5009741C2 /* Medication+Convenience.swift in Sources */,
+				D87B935B2964CEE0009741C2 /* MedicationDetailViewController.swift in Sources */,
+				D8AE8F1B29694735008D45BB /* Strings.swift in Sources */,
+				D87B933F2964C06E009741C2 /* AppDelegate.swift in Sources */,
+				D87B93592964CECE009741C2 /* MedicationListViewController.swift in Sources */,
+				D87B93492964C06E009741C2 /* MedicationManager.xcdatamodeld in Sources */,
+				D87B93622964D1CA009741C2 /* MedicationController.swift in Sources */,
+				D8AE8ECD2967ABDB008D45BB /* moodSurveyController.swift in Sources */,
+				D8AE8F19296936C6008D45BB /* NotificationScheduler.swift in Sources */,
+				D87B935D2964CFA2009741C2 /* MedicationTableViewCell.swift in Sources */,
+				D8AE8ECB2967AB75008D45BB /* moodSurvey+Convenience.swift in Sources */,
+				D87B93412964C06E009741C2 /* SceneDelegate.swift in Sources */,
+				D87B93642964D372009741C2 /* CoreDataStack.swift in Sources */,
+				D8AE8EC729679CFF008D45BB /* MoodSurveyViewController.swift in Sources */,
+				D87B93682964DFF6009741C2 /* DateFormatter+Extras.swift in Sources */,
+				D8AE8EC529675D7E008D45BB /* takenDate+Convenience.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D87B93442964C06E009741C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87B93452964C06E009741C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D87B934C2964C070009741C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87B934D2964C070009741C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D87B93502964C070009741C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D87B93512964C070009741C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D87B93532964C070009741C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74AQA4M4HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedicationManager/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominique-Strachan.MedicationManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D87B93542964C070009741C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74AQA4M4HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedicationManager/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dominique-Strachan.MedicationManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87B93362964C06E009741C2 /* Build configuration list for PBXProject "MedicationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87B93502964C070009741C2 /* Debug */,
+				D87B93512964C070009741C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87B93522964C070009741C2 /* Build configuration list for PBXNativeTarget "MedicationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87B93532964C070009741C2 /* Debug */,
+				D87B93542964C070009741C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D87B93472964C06E009741C2 /* MedicationManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D87B93482964C06E009741C2 /* MedicationManager.xcdatamodel */,
+			);
+			currentVersion = D87B93482964C06E009741C2 /* MedicationManager.xcdatamodel */;
+			path = MedicationManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D87B93332964C06E009741C2 /* Project object */;
+}
